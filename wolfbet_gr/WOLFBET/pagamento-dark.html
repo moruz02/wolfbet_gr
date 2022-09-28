@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scelta piano</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet/less" type="text/css" href="pagamento-dark.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less" ></script>
+</head>
+<body>
+    <header>
+        <i class="fa fa-arrow-left" aria-hidden="true"></i>
+        <img src="img/menu-logo.png" alt=""> 
+        <a href="#" class="light"><i class="fa fa-home" aria-hidden="true"></i></a> 
+    </header>
+    
+    <h2>Pagamento</h2>
+    <p class="text-att">Pagamento piano annuale</p>
+
+    <div class="piano-scelto">
+        <p class="p-right">Piano annuale</p>
+        <p class="p-right"><span>€ 10 </span>/ anno</p>
+        <button class="btn-change">Change</button>
+    </div>
+
+    <section class="pagamento">
+        <form action="">
+            <input type="number" id="numbercard" name="numbercard" class="numbercard" placeholder="Card Number" required>
+            <input type="email" id="email" name="email" placeholder="Email" class="email" required>
+            <input type="number" id="cvv" name="cvv" placeholder="CVV / CVC" class="cvv" required>
+            <input type="text" id="cardholder" name="cardholder" placeholder="Cardholder" class="cardholder" required>
+        </form>
+    </section>
+
+    <section class="container-btn">
+        <button class="btn-paga">Pay 70$</button>
+    </section>
+
+    <footer>
+        <p>Ti servono maggiori <br>informazioni?</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="function.js"></script>
+</body>
+</html>

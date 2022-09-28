@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;400;500;800&display=swap');
+@import 'variables';
+
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background: @dark-gray;
+    font-family: @outfit;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+}
+
+header img {
+    margin: 20px 0 0 20px;
+}
+
+header i {
+    font-size: 30px !important;
+    color: @dark-green;
+    margin: 20px 0 0 20px;
+}
+
+h2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 49px;
+    color: @white;
+    text-align: center;
+}
+
+.text-att {
+    text-align: center;
+    color: @white;
+    margin-top: 20px;
+    font-weight: 200;
+}
+
+.piano-scelto {
+    width: 80%;
+    height: 21vh;
+    margin: auto;
+    background: @light-green;
+    border-radius: @border-r-20;
+    margin-top: 30px;
+    padding: 20px;
+    border: 5px solid @dark-gray;
+    box-shadow: 0px 4px 20px @violet;
+}
+
+.piano-scelto p { 
+    color: @black;
+}
+
+.piano-scelto .p-right{
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.piano-scelto span {
+    font-size: 30px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.piano-scelto .btn-change {
+    background: @white;
+    border: 5px solid @dark-gray;
+    box-shadow: 0px 4px 20px @violet;
+    border-radius: @border-r-20;
+    padding: 15px 28px;
+}
+
+form {
+    width: 70%;
+    margin: 30px auto 0;
+}
+
+form label {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+form input::placeholder {
+    color: @black;
+}
+
+input[type=text],
+input[type=email], 
+input[type=password],
+select {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #E8E8E8;
+    border-radius: @border-r-8;
+    box-sizing: border-box;
+    background: #E5E9F0;
+  }
+
+  button[type=submit] {
+    width: 100%;
+    text-align: center;
+    background-color: #2BAF38;
+    color: @white;
+    padding: 12px 50px;
+    margin: 8px auto;
+    border: none;
+    border-radius: @border-r-20;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 20px;
+    border: 3px solid @dark-gray;
+    box-shadow: 0px 3px 14px @violet;
+}
+
+.privacy {
+    text-align: center;
+    color: @violet;
+    font-size: 12px;
+}
+
+footer p {
+    text-align: center;
+    margin-top: 25px;
+    color: @violet;
+}
