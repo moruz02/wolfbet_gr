@@ -84,6 +84,17 @@ h2 {
     margin: 40px auto 0;
 }
 
+.metodo-pagamento {
+    display: grid;
+    width: 40%;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 30px auto;
+}
+
+.metodo-pagamento img {
+    width: 50px;
+}
+
 form {
     display: grid;
     width: 100%;
@@ -155,6 +166,25 @@ footer p {
     text-align: center;
     margin-top: 25px;
     color: @white;
+}
+
+.piano-scelto {
+    animation: appear ease-out 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 @media screen and  (min-width: 769px) {
