@@ -33,22 +33,26 @@ h2 {
     color: @dark-green;
     font-weight: 500;
     font-size: 30px;
-    margin: 40px 0 0 50px;
+    margin: 40px 0 0 16%;
 }
 
 h3 {
     color: @white;
     font-weight: 500;
     font-size: 20px;
-    margin: 70px 0 0 50px;
+    margin: 70px 0 0 16%;
 }
 
 .h3-account {
-    margin: 150px 0 0 50px;
+    margin: 150px 0 0 16%;
+}
+
+.menu-utente {
+    margin-left: 3%;
 }
 
 ul {
-    margin: 40px 0 0 50px;
+    margin: 40px 0 0 16%;
 }
 
 ul li {
@@ -61,4 +65,28 @@ ul li {
 
 ul li i {
     margin-right: 15px;
+}
+
+ /* media query */
+
+ @media screen and (min-width: 769px) {
+    .menu-utente {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 70%;
+        margin: auto;
+    }
+
+    h2 {
+        font-size: 35px;
+        margin-left: 16%;
+    }
+
+    .h3-account {
+        margin-top: 70px;
+    }
+
+    h3, .h3-account {
+        font-size: 30px;
+    }
 }
