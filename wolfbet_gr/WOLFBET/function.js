@@ -4,4 +4,9 @@ $(document).ready(function(){
     });
  });
 
- 
+ $(document).ready(function(){
+    $(".metodo").click(function(){
+        $(".metodo").removeClass("selected");
+        $(this).addClass("selected");
+    });
+ });

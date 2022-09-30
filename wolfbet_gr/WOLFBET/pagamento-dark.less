@@ -81,18 +81,51 @@ h2 {
 
 .pagamento {
     width: 80%;
-    margin: 40px auto 0;
+    margin: 30px auto 40px;
 }
 
 .metodo-pagamento {
+    position: relative;
     display: grid;
-    width: 40%;
+    width: 80%;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 30px auto;
+    align-items: center;
+    position: relative;
+    gap: 10px;
 }
 
-.metodo-pagamento img {
-    width: 50px;
+.metodo img {
+    height: 40px;
+}
+
+.metodo span {
+    font-size: 12px;
+}
+
+.metodo i {
+    margin-right: 5px;
+}
+
+.metodo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.metodo:hover {
+    cursor: pointer;
+}
+
+.metodo.selected {
+    background: @light-green;
 }
 
 form {
@@ -188,11 +221,9 @@ footer p {
 }
 
 @media screen and  (min-width: 769px) {
-    .piano-scelto {
-        width: 40%;
-    }
-
-    .pagamento {
+    .piano-scelto,
+    .pagamento,
+    .metodo-pagamento {
         width: 40%;
     }
 
