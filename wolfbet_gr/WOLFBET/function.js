@@ -15,7 +15,7 @@ $(document).ready(function(){
  /**
  * JavaScript Client Detection
  * (C) viazenetti GmbH (Christian Ludwig)
- */
+
 (function (window) {
     {
         var unknown = '-';
@@ -176,10 +176,10 @@ $(document).ready(function(){
                 osVersion = /OS (\d+)_(\d+)_?(\d+)?/.exec(nVer);
                 osVersion = osVersion[1] + '.' + osVersion[2] + '.' + (osVersion[3] | 0);
                 break;
-        }
+        } */
         
         // flash (you'll need to include swfobject)
-        /* script src="//ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js" */
+        /* script src="//ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js" 
         var flashVersion = 'no check';
         if (typeof swfobject != 'undefined') {
             var fv = swfobject.getFlashPlayerVersion();
@@ -214,4 +214,4 @@ alert(
     'Cookies: ' + jscd.cookies + '\n' +
     'Screen Size: ' + jscd.screen + '\n\n' +
     'Full User Agent: ' + navigator.userAgent
-);
+);*/
